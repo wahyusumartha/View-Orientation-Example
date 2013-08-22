@@ -21,6 +21,8 @@
 		EB3CE60617C3D8330020A2B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3CE5E717C3D8320020A2B3 /* Foundation.framework */; };
 		EB3CE60E17C3D8330020A2B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB3CE60C17C3D8330020A2B3 /* InfoPlist.strings */; };
 		EB3CE61117C3D8330020A2B3 /* ViewOrientationAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3CE61017C3D8330020A2B3 /* ViewOrientationAnimationTests.m */; };
+		EB3CE61F17C3D8850020A2B3 /* VMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3CE61E17C3D8850020A2B3 /* VMainViewController.m */; };
+		EB3CE62117C3D9120020A2B3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3CE62017C3D9120020A2B3 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		EB3CE60D17C3D8330020A2B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB3CE60F17C3D8330020A2B3 /* ViewOrientationAnimationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewOrientationAnimationTests.h; sourceTree = "<group>"; };
 		EB3CE61017C3D8330020A2B3 /* ViewOrientationAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewOrientationAnimationTests.m; sourceTree = "<group>"; };
+		EB3CE61C17C3D8530020A2B3 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		EB3CE61D17C3D8850020A2B3 /* VMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMainViewController.h; sourceTree = "<group>"; };
+		EB3CE61E17C3D8850020A2B3 /* VMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMainViewController.m; sourceTree = "<group>"; };
+		EB3CE62017C3D9120020A2B3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3CE62117C3D9120020A2B3 /* QuartzCore.framework in Frameworks */,
 				EB3CE5E617C3D8320020A2B3 /* UIKit.framework in Frameworks */,
 				EB3CE5E817C3D8320020A2B3 /* Foundation.framework in Frameworks */,
 				EB3CE5EA17C3D8320020A2B3 /* CoreGraphics.framework in Frameworks */,
@@ -101,6 +108,7 @@
 		EB3CE5E417C3D8320020A2B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB3CE62017C3D9120020A2B3 /* QuartzCore.framework */,
 				EB3CE5E517C3D8320020A2B3 /* UIKit.framework */,
 				EB3CE5E717C3D8320020A2B3 /* Foundation.framework */,
 				EB3CE5E917C3D8320020A2B3 /* CoreGraphics.framework */,
@@ -112,6 +120,8 @@
 		EB3CE5EB17C3D8320020A2B3 /* ViewOrientationAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				EB3CE61B17C3D8430020A2B3 /* Macros */,
+				EB3CE61A17C3D83C0020A2B3 /* ViewControllers */,
 				EB3CE5F417C3D8320020A2B3 /* VAppDelegate.h */,
 				EB3CE5F517C3D8320020A2B3 /* VAppDelegate.m */,
 				EB3CE5EC17C3D8320020A2B3 /* Supporting Files */,
@@ -150,6 +160,23 @@
 				EB3CE60C17C3D8330020A2B3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB3CE61A17C3D83C0020A2B3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB3CE61D17C3D8850020A2B3 /* VMainViewController.h */,
+				EB3CE61E17C3D8850020A2B3 /* VMainViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EB3CE61B17C3D8430020A2B3 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				EB3CE61C17C3D8530020A2B3 /* Global.h */,
+			);
+			name = Macros;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +291,7 @@
 			files = (
 				EB3CE5F217C3D8320020A2B3 /* main.m in Sources */,
 				EB3CE5F617C3D8320020A2B3 /* VAppDelegate.m in Sources */,
+				EB3CE61F17C3D8850020A2B3 /* VMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +395,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewOrientationAnimation/ViewOrientationAnimation-Prefix.pch";
 				INFOPLIST_FILE = "ViewOrientationAnimation/ViewOrientationAnimation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -378,6 +407,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewOrientationAnimation/ViewOrientationAnimation-Prefix.pch";
 				INFOPLIST_FILE = "ViewOrientationAnimation/ViewOrientationAnimation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -436,6 +466,7 @@
 				EB3CE61617C3D8330020A2B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB3CE61717C3D8330020A2B3 /* Build configuration list for PBXNativeTarget "ViewOrientationAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +475,7 @@
 				EB3CE61917C3D8330020A2B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
